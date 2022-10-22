@@ -1,0 +1,70 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 84, in script
+    call screen hamster_cage
+  File "renpy/common/000statements.rpy", line 609, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 19, in execute
+    screen hamster_cage:
+  File "game/script.rpy", line 19, in execute
+    screen hamster_cage:
+  File "game/script.rpy", line 21, in execute
+    add "target" at Transform(function=target.transform)
+  File "game/script.rpy", line 21, in keywords
+    add "target" at Transform(function=target.transform)
+  File "game/script.rpy", line 21, in <module>
+    add "target" at Transform(function=target.transform)
+NameError: name 'target' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 84, in script
+    call screen hamster_cage
+  File "/home/d/Desktop/renpy-8.0.3-sdk/renpy/ast.py", line 2232, in execute
+    self.call("execute")
+  File "/home/d/Desktop/renpy-8.0.3-sdk/renpy/ast.py", line 2220, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "/home/d/Desktop/renpy-8.0.3-sdk/renpy/statements.py", line 281, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 609, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "/home/d/Desktop/renpy-8.0.3-sdk/renpy/exports.py", line 3181, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "/home/d/Desktop/renpy-8.0.3-sdk/renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/home/d/Desktop/renpy-8.0.3-sdk/renpy/display/core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/home/d/Desktop/renpy-8.0.3-sdk/renpy/display/core.py", line 3810, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/home/d/Desktop/renpy-8.0.3-sdk/renpy/display/core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "/home/d/Desktop/renpy-8.0.3-sdk/renpy/display/core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "/home/d/Desktop/renpy-8.0.3-sdk/renpy/display/core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "/home/d/Desktop/renpy-8.0.3-sdk/renpy/display/screen.py", line 451, in visit_all
+    callback(self)
+  File "/home/d/Desktop/renpy-8.0.3-sdk/renpy/display/core.py", line 3810, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/home/d/Desktop/renpy-8.0.3-sdk/renpy/display/screen.py", line 462, in per_interact
+    self.update()
+  File "/home/d/Desktop/renpy-8.0.3-sdk/renpy/display/screen.py", line 653, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 19, in execute
+    screen hamster_cage:
+  File "game/script.rpy", line 19, in execute
+    screen hamster_cage:
+  File "game/script.rpy", line 21, in execute
+    add "target" at Transform(function=target.transform)
+  File "game/script.rpy", line 21, in keywords
+    add "target" at Transform(function=target.transform)
+  File "game/script.rpy", line 21, in <module>
+    add "target" at Transform(function=target.transform)
+NameError: name 'target' is not defined
+
+Linux-5.15.0-43-generic-x86_64-with-glibc2.35 x86_64
+Ren'Py 8.0.3.22090809
+sad 1.0
+Sat Oct 15 16:32:05 2022

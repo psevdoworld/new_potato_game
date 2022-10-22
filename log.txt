@@ -1,0 +1,46 @@
+Sat Oct 15 17:25:24 2022
+Linux-5.15.0-43-generic-x86_64-with-glibc2.35
+Ren'Py 8.0.3.22090809
+ 
+
+Bootstrap to the start of init.init took 0.05s
+Early init took 0.00s
+Loader init took 0.00s
+Loading error handling took 0.02s
+Loading script took 0.06s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/d/Desktop/renpy-8.0.3-sdk/lib/py3-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory')
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.12s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1280, 1024)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'AMD'"
+Renderer: b'AMD RENOIR (LLVM 13.0.1, DRM 3.42, 5.15.0-43-generic)'
+Version: b'4.6 (Compatibility Profile) Mesa 22.0.5'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1178, 663) drawable=(1178, 663)
+Maximum texture size: 4096x4096
